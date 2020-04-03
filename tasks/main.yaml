@@ -1,0 +1,7 @@
+---
+- name: "Install python-setuptools"
+  package:
+    pkg: "{{ install_python_setuptools_packages[(ansible_os_family | lower) + '_' + (ansible_architecture | lower)] }}"
+    state: "present"
+  tags:
+    - "python-setuptools"

@@ -1,0 +1,6 @@
+---
+install_python_setuptools_packages:
+  debian: &debian
+    - "python-setuptools"
+  debian_armv7l: *debian
+  debian_x86_64: *debian
